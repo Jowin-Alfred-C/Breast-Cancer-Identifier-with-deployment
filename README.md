@@ -1,6 +1,6 @@
 # Breast-Cancer-Identifier-with-deployment
 END to END ML model by SVM algorithm with complete deployment using flask 
 OUTPUT:
-<img width="997" alt="image" src="https://user-images.githubusercontent.com/102053345/174947184-11a74cb6-0158-47db-93da-f96302d07add.png">
-<img width="936" alt="image" src="https://user-images.githubusercontent.com/102053345/174947317-84550272-3453-43ca-9400-30fff66a26b7.png">
-<img width="936" alt="image" src="https://user-images.githubusercontent.com/102053345/174947340-7f2e5fc9-7b09-4618-baf9-716f79c170f8.png">
+<img width="1071" alt="image" src="https://user-images.githubusercontent.com/102053345/174947479-728ad55c-8b33-4b62-a42b-73a7c77098f7.png">
+<img width="1071" alt="image" src="https://user-images.githubusercontent.com/102053345/174947561-06480146-b37e-4c5c-984f-e5681cfc0479.png">
+<img width="1067" alt="image" src="https://user-images.githubusercontent.com/102053345/174947654-367f062e-da50-4106-b40a-80bde64f5a3a.png">
