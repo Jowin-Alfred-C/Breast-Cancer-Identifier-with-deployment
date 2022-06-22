@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Breast Cancer Classification</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="static/style.css">
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+			<div class="inner">
+				
+				<div class="image-holder">
+					<h3>{{ prediction_text }}</h3>
+					<img src="static/images/registration-form-4.jpg" alt="">
+					<br>
+					<p class="hii">
+						* A cancer that forms in the cells of the breasts.
+Breast cancer can occur in women and rarely in men.
+Symptoms of breast cancer include a lump in the breast, bloody discharge from the nipple and changes in the shape or texture of the nipple or breast.
+Its treatment depends on the stage of cancer. It may consist of chemotherapy, radiation, hormone therapy and surgery.
+					</p>
+					<br>
+					<p class="hii">* Symptoms of breast cancer include a lump in the breast, bloody discharge from the nipple and changes in the shape or texture of the nipple or breast.</p>
+				    <br>
+					<p class="hii">* 
+						Its treatment depends on the stage of cancer. It may consist of chemotherapy, radiation, hormone therapy and surgery. </p>
+					<br>
+					<p class="hii">* Why is early diagnosis of breast cancer important?-
+						Early detection of breast cancer is important as it is associated with an increased number of available treatment options, increased survival, and improved quality of life. While there is no definitive method of preventing breast cancer, early detection provides the best chance of effective treatment.</p>
+					
+					<img src="static/images/BreastCancerAwareness.jpg" alt="">
+					<br>
+
+					<p class="hi"> <br> DEVELOPED BY JOWIN ALFRED C</p>
+				
+				
+				</div>
+
+			 	 
+
+				<form action="{{ url_for('predict')}}"method="post">
+					
+					<h3>Breast Cancer Identifier</h3>
+					<p class="hi">Enter the necessary details below in float values
+
+					</p><br>
+					<div class="form-holder active">
+						<input type="number" step="any" name="radius_mean" placeholder="radius mean"  required="required" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="number" step="any" name="texture_mean" placeholder="texture mean" required="required" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="number" step="any" name="perimeter_mean" placeholder="perimeter mean" required="required" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="number" step="any" name="area_mean" placeholder="area mean" required="required" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="number" step="any" name="smoothness_mean" placeholder="smoothness mean" required="required" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="number" step="any" name="compactness_mean" placeholder="compactness mean" required="required" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="number" step="any" name="concavity_mean" placeholder="concavity mean" required="required" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="number" step="any" name="concave points_mean" placeholder="concave points mean " required="required" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="number" step="any" name="symmetry_mean" placeholder="symmetry mean" required="required" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="number" step="any" name="fractal_dimension_mean" placeholder="fractal dimension mean" required="required" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="number" step="any" name="radius_se" placeholder="radius se" required="required" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="number" step="any" name="texture_se" placeholder="texture se" required="required" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="number" step="any" name="perimeter_se" placeholder="perimeter se" required="required" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="number" step="any" name="area_se" placeholder="area se" required="required" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="number" step="any" name="smoothness_se" placeholder="smoothness se" required="required" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="number" step="any" name="compactness_se" placeholder="compactness se" required="required" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="number" step="any" name="concavity_se" placeholder="concavity se" required="required" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="number" step="any" name="concave points_se" placeholder="concave points se" required="required" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="number" step="any" name="symmetry_se" placeholder="symmetry se" required="required" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="number" step="any" name="fractal_dimension_se" placeholder="fractal dimension se" required="required" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="number" step="any" name="radius_worst" placeholder="radius worst" required="required" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="number" step="any" name="texture_worst" placeholder="texture worst" required="required" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="number" step="any" name="perimeter_worst" placeholder="perimeter worst" required="required" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="number" step="any" name="area_worst" placeholder=" area worst" required="required" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="number" step="any" name="smoothness_worst" placeholder="smoothness worst" required="required" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="number" step="any" name="compactness_worst" placeholder="compactness worst" required="required" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="number" step="any" name="concavity_worst" placeholder="concavity worst" required="required" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="number" step="any" name="concave points_worst" placeholder="concave points worst" required="required" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="number" step="any" name="symmetry_worst" placeholder="symmetry worst" required="required" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="number" step="any" name="fractal_dimension_worst" placeholder="fractal dimension worst" required="required" class="form-control">
+					</div>
+					
+
+					
+					<div class="form-login">
+						<button type="submit">PREDICT</button>
+						
+					</div>
+
+					
+				
+
+
+				</form>
+				<br>
+				
+			</div>
+		</div>
+
+		<script src="static/js/jquery-3.3.1.min.js"></script>
+		<script src="static/js/main.js"></script>
+	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
