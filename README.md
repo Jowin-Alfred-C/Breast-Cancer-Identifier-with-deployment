@@ -4,6 +4,5 @@ END to END ML model by SVM algorithm with complete deployment using flask
 LIVE WEBAPP: ---> https://breast-cancer-detector-ai.herokuapp.com
 
 OUTPUT:
-<img width="1071" alt="image" src="https://user-images.githubusercontent.com/102053345/174947479-728ad55c-8b33-4b62-a42b-73a7c77098f7.png">
-<img width="1071" alt="image" src="https://user-images.githubusercontent.com/102053345/174947561-06480146-b37e-4c5c-984f-e5681cfc0479.png">
-<img width="1067" alt="image" src="https://user-images.githubusercontent.com/102053345/174947654-367f062e-da50-4106-b40a-80bde64f5a3a.png">
+
+<img width="895" alt="Screenshot 2022-06-24 at 10 12 18 AM" src="https://user-images.githubusercontent.com/102053345/175463743-a28c4c0e-32e5-4943-8d40-8ddbd9d6d04a.png">
